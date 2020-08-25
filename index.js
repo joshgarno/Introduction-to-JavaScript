@@ -71,6 +71,40 @@ console.log(
 
 // when you are finished invoke your function with the weight of 15 lbs and the age of 1 year - if your calculations are correct your result should be 0.44999999999999996
 
+const dogPounds = 15;
+
+const dogYear = 1;
+
+if (dogYear >= 1 && dogPounds > 15) {
+  console.log(
+    "Your dog should eat " + dogPounds * 0.02 + " lbs of dog food every day."
+  );
+} else if (dogYear >= 1 && dogPounds >= 11 && dogPounds <= 15) {
+  console.log(
+    "Your dog should eat " + dogPounds * 0.03 + " lbs of dog food every day."
+  );
+} else if (dogYear >= 1 && dogPounds >= 6 && dogPounds < 11) {
+  console.log(
+    "Your dog should eat " + dogPounds * 0.04 + " lbs of dog food every day."
+  );
+} else if (dogYear > 0.84 && dogYear < 1) {
+  console.log(
+    "Your dog should eat " + dogPounds * 0.05 + " lbs of dog food every day."
+  );
+} else if (dogYear >= 0.48 && dogYear < 0.84) {
+  console.log(
+    "Your dog should eat " + dogPounds * 0.04 + " lbs of dog food every day."
+  );
+} else if (dogYear > 0.48 && dogYear < 0.24) {
+  console.log(
+    "Your dog should eat " + dogPounds * 0.05 + " lbs of dog food every day."
+  );
+} else {
+  console.log(
+    "Your dog should eat " + dogPounds * 0.1 + " lbs of dog food every day."
+  );
+}
+
 /************************************************************** Task 4 **************************************************************/
 // Rock, Paper, Sissors
 // Your function should take a string (either rock paper or sissors)
