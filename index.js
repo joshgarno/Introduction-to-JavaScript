@@ -4,9 +4,9 @@
 const votingAge = 38;
 
 if (votingAge > 18) {
-  console.log("True, you can vote.");
+  console.log("True, yes, you can vote.");
 } else {
-  console.log("False, you can't vote. Sorry.");
+  console.log("False, no, you can't vote. Sorry.");
 }
 
 //Task b: declare a variable and then use a conditional to change the value of that variable based on the value assigned to a second variable (no function required)
@@ -17,7 +17,7 @@ const num2 = 2;
 
 num1 = num1 + num2;
 
-console.log(num1);
+console.log("Your number is " + num1);
 
 //Task c: Convert string ("1999") to integer (1999)  (no function required) // hint look up the Number method
 
@@ -25,11 +25,11 @@ let date1 = "1999";
 
 date1 = Number(date1);
 
-console.log(date1);
+console.log("Your date is " + date1);
 
 //Test should = 2000
 
-console.log(date1 + 1);
+console.log("Your date + 1 is " + (date1 + 1));
 
 //Task d: Write a function to multiply a*b
 
@@ -37,9 +37,9 @@ function multiply(a, b) {
   return a * b;
 }
 
-const num3 = multiply(num1, num2);
+num1 = multiply(num1, num2);
 
-console.log(num3);
+console.log("Your number is " + num1);
 
 /************************************************************** Task 2 **************************************************************/
 //Age in Dog years
@@ -49,9 +49,9 @@ function dogYears(a) {
   return a * 7;
 }
 
-const dogAge = dogYears(votingAge);
-
-console.log(dogAge);
+console.log(
+  votingAge + " is equal to " + dogYears(votingAge) + " in dog years"
+);
 
 /************************************************************** Task 3 **************************************************************/
 //Dog feeder
@@ -82,7 +82,19 @@ console.log(dogAge);
 //Metric Converter
 //a. KM to Miles - should take the number of kilometers and convert it to the equal number of miles
 
+function kmToMiles(a) {
+  return a * 0.6214;
+}
+
+console.log(num1 + "km is equal to " + kmToMiles(num1) + " miles");
+
 //b. Feet to CM - should take the number of feet and convert it to the equal number of centimeters
+
+function ftToCm(a) {
+  return a * 30.48;
+}
+
+console.log(num1 + " feet/foot is equal to " + ftToCm(num1) + " centimeters");
 
 /************************************************************** Task 6 **************************************************************/
 // 99 bottles of soda on the wall
