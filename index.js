@@ -125,6 +125,20 @@ console.log(annoyingSong());
 //60s should be D
 //and anything below 60 should be F
 
+const gradeNum1 = 83.161;
+
+if (gradeNum1 >= 90) {
+  console.log("Your grade is A");
+} else if (gradeNum1 >= 80) {
+  console.log("Your grade is B");
+} else if (gradeNum1 >= 70) {
+  console.log("Your grade is C");
+} else if (gradeNum1 >= 60) {
+  console.log("Your grade is D");
+} else {
+  console.log("Your grade is F");
+}
+
 /************************************************************** Stretch **************************************************************/
 //Create a function that counts the number of vowels within a string. It should handle both capitalized and uncapitalized vowels.
 // Hint - you may need to study tomorrow's traning kit on arrays
