@@ -4,9 +4,9 @@
 const votingAge = 38;
 
 if (votingAge > 18) {
-  console.log("true");
+  console.log("True, you can vote.");
 } else {
-  console.log("false");
+  console.log("False, you can't vote. Sorry.");
 }
 
 //Task b: declare a variable and then use a conditional to change the value of that variable based on the value assigned to a second variable (no function required)
@@ -44,6 +44,14 @@ console.log(num3);
 /************************************************************** Task 2 **************************************************************/
 //Age in Dog years
 //write a function that takes your age and returns it to you in dog years - they say that 1 human year is equal to seven dog years
+
+function dogYears(a) {
+  return a * 7;
+}
+
+const dogAge = dogYears(votingAge);
+
+console.log(dogAge);
 
 /************************************************************** Task 3 **************************************************************/
 //Dog feeder
