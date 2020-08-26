@@ -106,6 +106,36 @@ console.log("Your dog should eat " + dogFood + " lbs of dog food every day.");
 // use math.random to determine the computers choice
 // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number
 
+function rockPaperScissors(p, c) {
+  if (p === 0 && c === 0) {
+    return "You picked rock and your opponent picked rock, you tied";
+  } else if (p === 0 && c === 1) {
+    return "You picked rock and your opponent picked paper, you lose";
+  } else if (p === 0 && c === 2) {
+    return "You picked rock and your opponent picked scissors, you win";
+  } else if (p === 1 && c === 0) {
+    return "You picked paper and your opponent picked rock, you win";
+  } else if (p === 1 && c === 1) {
+    return "You picked paper and your opponent picked paper, you tied";
+  } else if (p === 1 && c === 2) {
+    return "You picked paper and your opponent picked scissors, you lose";
+  } else if (p === 2 && c === 0) {
+    return "You picked scissors and your opponent picked rock, you lose";
+  } else if (p === 2 && c === 1) {
+    return "You picked scissors and your opponent picked paper, you win";
+  } else {
+    return "You picked scissors and your opponentr picked scissors, you tied";
+  }
+}
+
+const computerChoice = Math.floor(Math.random() * 3);
+
+const personChoice = 1;
+
+let outcome = rockPaperScissors(personChoice, computerChoice);
+
+console.log(outcome);
+
 /************************************************************** Task 5 **************************************************************/
 //Metric Converter
 //a. KM to Miles - should take the number of kilometers and convert it to the equal number of miles
